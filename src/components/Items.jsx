@@ -3,37 +3,37 @@ function Items() {
     {
       id: 0,
       text: "داشبورد",
-      icon: "/public/icon/element-3.svg",
+      icon: "/icon/element-3.svg",
     },
     {
       id: 1,
       text: "لیست رزرو من",
-      icon: "/public/icon/user-square.svg",
+      icon: "/icon/user-square.svg",
     },
     {
       id: 2,
       text: "بخش مالی",
-      icon: "/public/icon/empty-wallet.svg ",
+      icon: "/icon/empty-wallet.svg ",
     },
     {
       id: 3,
       text: "مدیریت تیکت ها",
-      icon: "/public/icon/direct.svg",
+      icon: "/icon/direct.svg",
     },
     {
       id: 4,
       text: "باشگاه مشتریان",
-      icon: "/public/icon/profile-2user.svg ",
+      icon: "/icon/profile-2user.svg ",
     },
     {
       id: 5,
       text: "علاقه مندی های من",
-      icon: "/public/icon/star.svg ",
+      icon: "/icon/star.svg ",
     },
     {
       id: 6,
       text: "مسافران",
-      icon: "/public/icon/verify.svg",
+      icon: "/icon/verify.svg",
     },
   ];
 
