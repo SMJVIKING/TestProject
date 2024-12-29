@@ -40,8 +40,8 @@ function ReservesList() {
 
   return (
     <div className="bg-current p-10 rounded-xl w-screen">
-      <div className="flex justify-between items-center mb-6">
-        <h1 className="text-xl font-bold">لیست رزرو های اخیر</h1>
+      <div className="flex justify-between items-center mb-6 gap-x-4">
+        <h1 className="md:text-xl text-sm font-bold">لیست رزرو های اخیر</h1>
         <button
           className="bg-gray-darkest text-white p-3 w-36 rounded-lg"
           aria-label="مشاهده لیست تیکت ها"
@@ -69,18 +69,18 @@ function ReservesList() {
             </button>
           </div>
 
-          <div className="flex mt-2">
-            <div className="border-l-2 border-dashed border-gray-400 h-20 mx-4"></div>
+          <div className="flex mt-4">
+            <div className="border-l-2 border-dashed border-gray-400 h-24 mx-4"></div>
             <ul className="list-none p-0">
-              <li className="flex items-center mb-2 gap-x-4">
+              <li className="flex items-center mb-4 gap-x-2">
                 <span className="font-bold">نام هتل :</span>
                 <span className="text-gray-dark">{ticket.hotelName}</span>
               </li>
-              <li className="flex items-center mb-2 gap-x-4">
+              <li className="flex items-center mb-4 gap-x-2">
                 <span className="font-bold">مبلغ :</span>
                 <span className="text-gray-dark">{ticket.price}</span>
               </li>
-              <li className="flex items-center mb-2 gap-x-4">
+              <li className="flex items-center mb-4 gap-x-2">
                 <span className="font-bold">وضعیت :</span>
                 <span className={ticket.StatusColor}>{ticket.status}</span>
               </li>

@@ -10,7 +10,7 @@ function HomeBody() {
   };
 
   return (
-    <div className="mt-10">
+    <div className="mt-6">
       <div className="hidden justify-center gap-x-10 w-full md:flex">
         <TicketsList/>
         <ReservesList/>
@@ -20,7 +20,7 @@ function HomeBody() {
         {isActive === "0" ? <TicketsList id="0" /> : <ReservesList id="1" />}
       </div>
 
-      <div className="flex md:hidden items-center justify-center gap-x-2 mt-8">
+      <div className="flex md:hidden items-center justify-center gap-x-2 mt-8 mb-6">
         <button
          aria-label="نمایش تیکت ها"
           className={`w-12 h-1.5 rounded-2xl ${

@@ -3,14 +3,14 @@ import Items from "./Items";
 function Sidebar({ isOpen, onClose }) {
   return (
     <div
-      className={`absolute max-w-72 top-0 right-0 h-auto bg-current text-gray-lightest transition-transform duration-300 
-      ${isOpen ? "translate-x-0" : "translate-x-full"} 
-      2xl:translate-x-0 2xl:max-w-96`}
-      role="complementary"
-      aria-hidden={!isOpen}
-      aria-labelledby="sidebar-title"
+      className={`absolute max-w-72 top-0 right-0 min-h-screen bg-current text-gray-lightest transition-transform duration-300 
+        ${isOpen ? "translate-x-0" : "translate-x-full"} 
+        2xl:translate-x-0 2xl:max-w-96 m-0 p-0`}
+        role="complementary"
+        aria-hidden={!isOpen}
+        aria-labelledby="sidebar-title"
     >
-      <div className="p-4 max-h-max">
+      <div className="p-4">
         <button
           className="absolute top-4 left-4 bg-gray-lightest text-gray-dark p-2 rounded-lg 2xl:hidden"
           onClick={onClose}
@@ -30,9 +30,9 @@ function Sidebar({ isOpen, onClose }) {
           </svg>
         </button>
 
-        <div className="m-2 space-y-52">
+        <div className="m-2 mt-14 space-y-52">
           <div>
-            <div className="mb-10 flex flex-col items-center">
+            <div className="mb-12 flex flex-col items-center">
               <div className="relative flex flex-col items-center">
                 <span className="bg-orange-light w-12 h-1.5 rounded-2xl absolute bottom-0 mb-0.5"></span>
                 <span className="block">
@@ -43,14 +43,14 @@ function Sidebar({ isOpen, onClose }) {
                   />
                 </span>
               </div>
-              <h2 className="text-gray-darkest text-xl mt-2">ZARVANTRIP</h2>
+              <h2 className="text-gray-darkest text-xl mt-4">ZARVANTRIP</h2>
               <div className="w-full border-b-2 border-gray-light mt-3"></div>
             </div>
             <Items />
           </div>
 
           <div>
-            <div className="bg-gray-lightest p-3 rounded-md w-full flex flex-col items-center space-y-1">
+            <div className="bg-gray-lightest p-4 rounded-md w-full flex flex-col items-center space-y-1">
               <span className="block">
                 <img
                   className="w-10 h-10 rounded-full"
@@ -63,7 +63,7 @@ function Sidebar({ isOpen, onClose }) {
             </div>
 
             <button
-              className="bg-orange-dark text-white p-2 w-full rounded-lg mt-4"
+              className="bg-orange-dark text-white p-2 w-full rounded-lg mt-6"
               aria-label="خروج از حساب کاربری"
             >
               خروج

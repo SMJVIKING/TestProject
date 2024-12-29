@@ -39,7 +39,7 @@ function Header() {
         </div>
 
         <div
-          className="flex items-center space-x-4 p-2 bg-gray-lightest rounded-lg mr-3"
+          className="flex  items-center space-x-2  md:space-x-4 p-2 bg-gray-lightest rounded-lg mr-3"
           role="complementary"
         >
           <span
@@ -47,8 +47,8 @@ function Header() {
             aria-label="آیکون قیمت"
           >
             <svg
-              width="24"
-              height="24"
+              width="30"
+              height="30"
               viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -72,13 +72,15 @@ function Header() {
               />
             </svg>
           </span>
-          <span className="pr-2 text-gray-dark">21,265,000 تومان</span>
+          <span className="pr-2 text-gray-dark hidden md:block">
+            21,265,000 تومان
+          </span>
         </div>
       </div>
 
       <div className="flex">
         <button
-          className="flex items-center space-x-4 p-2 bg-orange-darkest rounded-lg ml-3"
+          className="flex items-center space-x-4 md:p-2 bg-orange-darkest rounded-lg ml-3"
           aria-label="برگشت به وبسایت"
         >
           <span
@@ -108,11 +110,11 @@ function Header() {
           </span>
         </button>
 
-        <button className="relative flex items-center space-x-4 p-2 bg-gray-lightest rounded-lg">
+        <button className="relative flex items-center space-x-4 md:p-2 bg-gray-lightest rounded-lg">
           <button
             className="w-10 h-10 text-gray-light rounded-md flex items-center justify-center"
             aria-hidden="true"
-             aria-label="یادداشت ها"
+            aria-label="یادداشت ها"
           >
             <svg
               width="30"
@@ -140,7 +142,7 @@ function Header() {
               />
             </svg>
           </button>
-          <span className="absolute -top-2 left-7 transform bg-orange-darkest text-gray-lightest rounded-full  w-5 h-5 flex justify-center">
+          <span className="absolute -top-1 left-4 md:-top-2 md:left-7 transform bg-orange-darkest text-gray-lightest rounded-full w-4 h-4 text-sm md:w-5 md:h-5 flex justify-center">
             <span aria-hidden="true">2</span>
           </span>
         </button>
@@ -149,15 +151,3 @@ function Header() {
   );
 }
 export default Header;
-
-
-
-
-
-
-
-
-
-
-
-

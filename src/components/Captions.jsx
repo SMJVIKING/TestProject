@@ -33,7 +33,7 @@ function Captions() {
 
   return (
     <div>
-      <div className="md:flex hidden justify-between mt-6">
+      <div className="md:flex hidden justify-between mt-2">
         {captions.map((caption) => (
           <div className="items-center flex " key={caption.id}>
             <div
