@@ -54,7 +54,7 @@ function Sidebar({ isOpen, onClose }) {
               <span className="block">
                 <img
                   className="w-10 h-10 rounded-full"
-                  src="/public/images/alexander-hipp-iEEBWgY_6lA-unsplash.jpg"
+                  src="/images/alexander-hipp-iEEBWgY_6lA-unsplash.jpg"
                   alt="عکس کاربر"
                 />
               </span>
