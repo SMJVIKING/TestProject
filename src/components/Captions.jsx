@@ -5,17 +5,17 @@ function Captions() {
     {
       id: 0,
       text: "تعداد رزرو های من 50 تا",
-      icon: "/public/icon/box-tick.svg",
+      icon: "/icon/box-tick.svg",
     },
     {
       id: 1,
       text: "تیکت های من 1023 تا",
-      icon: "/public/icon/sms-tracking.svg",
+      icon: "/icon/sms-tracking.svg",
     },
     {
       id: 2,
       text: "مبلغ کل خرید 2,000,000 تومان",
-      icon: "/public/icon/bag-2.svg",
+      icon: "/icon/bag-2.svg",
     },
   ];
 
@@ -46,7 +46,7 @@ function Captions() {
               onClick={() => handleClick(caption)}
             >
               <span>
-                <img src={caption.icon} alt={caption.text} />
+                <img src={caption.icon} alt="ایکون کپشن" />
               </span>
               <span className="m-2 text-xl text-textColor">{caption.text}</span>
             </div>
@@ -71,7 +71,7 @@ function Captions() {
               onClick={() => handleClick(caption)}
             >
               <span>
-                <img src={caption.icon} alt={caption.text} />
+                <img src={caption.icon} alt="ایکون کپشن" />
               </span>
               <span className="m-2 text-xl text-textColor">{caption.text}</span>
             </div>
@@ -83,7 +83,7 @@ function Captions() {
         {captions.map((caption) => (
           <button
             key={caption.id}
-    aria-label={`انتخاب ${caption.text}`}
+            aria-label={`انتخاب ${caption.text}`}
             className={`w-12 h-1.5 mx-2 rounded-2xl cursor-pointer ${
               isActive.id === caption.id ? "bg-orange-light" : "bg-gray-light"
             }`}
