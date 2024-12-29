@@ -37,7 +37,7 @@ function Sidebar({ isOpen, onClose }) {
                 <span className="bg-orange-light w-12 h-1.5 rounded-2xl absolute bottom-0 mb-0.5"></span>
                 <span className="block">
                   <img
-                    src="/public/icon/logo-sample 4.svg"
+                    src="/icon/logo-sample 4.svg"
                     alt="لوگو ZARVANTRIP"
                     className="h-20 w-20 mt-4 mb-2 bg-gradient-to-b from-linear-dark via-linear-gay to-linear-gray p-4 rounded-lg"
                   />

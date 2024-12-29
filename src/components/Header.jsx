@@ -12,7 +12,7 @@ function Header() {
         >
           <img
             className="rounded-full w-14 h-14 mr-2"
-            src="/public/images/alexander-hipp-iEEBWgY_6lA-unsplash.jpg"
+            src="/images/alexander-hipp-iEEBWgY_6lA-unsplash.jpg"
             alt="تصویر کاربر"
           />
           <span
